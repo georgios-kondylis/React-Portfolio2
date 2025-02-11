@@ -47,21 +47,22 @@ const Skills = ({textColor, darkMode}) => {
       className="bg-transparent flex flex-col"
     >
       {/* Buttons to switch skills category */}
-      <div className={`text-white w-full flex justify-around gap-1 mb-6`}>
+      <div className={`text-white pb-[5px] rounded-md w-full flex justify-around gap-1 mb-[15px]`}>
         {Object.keys(skills).map((category, i) => (
           <div key={i} className="relative ">
-            <button key={i} className={`${dispayedSkills === category? 'text-white' : 'text-[#8a8a8ab8]' }`}
+            <button key={i} className={`${dispayedSkills === category? `${textColor} text-[1.1rem] ` : `${darkMode? ' text-[#8a8a8ab8]':' text-[#2d2d2db8]'} transition-all ease-in-out duration-300` }`}
               onClick={() => setDispayedSkills(category)} // Fix applied here
             >
               {category.toUpperCase()}
             </button>
-            {dispayedSkills === category &&  <div className={`absolute bottom-0 left-0 w-[90%] h-[2px] bg-gradient-to-r from-[#f5f3dc] to-transparent`}></div>}
+            {dispayedSkills === category &&  
+            <div className={`absolute bottom-0 left-0 w-[90%] h-[2px] bg-gradient-to-r ${darkMode? 'from-[#f5f3dc]' : 'from-[#000000]'} to-transparent`}></div>}
           </div>
         ))}
       </div>
 
       {/* Display selected skills */}
-      <div className={`w-full md:min-w-[400px] relative flex flex-wrap justify-center text-white bg-[#1b1b1b] max-md:p-[10px] md:p-[25px] rounded-lg max-h-[400px] gap-[20px]`}>
+      <div className={`w-full md:min-w-[400px] relative flex flex-wrap justify-center text-white bg-textBg max-md:p-[10px] md:p-[25px] rounded-lg max-h-[400px] gap-[20px]`}>
         {skills[dispayedSkills].map((skill, i) => (
           <div key={i} className="flex items-center gap-2">
             {skill.name === "Next.js" ? (

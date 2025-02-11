@@ -4,13 +4,13 @@ import { margins_paddings } from "../utils";
 
 const Testimonials = ({ textColor, darkMode }) => {
   return (
-    <div className={` ${margins_paddings} flex py-[20px] justify-center flex-wrap gap-[20px]`}>
+    <div id="testimonials" className={` ${margins_paddings} flex py-[20px] justify-center flex-wrap gap-[20px]`}>
       <h1 className={`w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] HEADER-mb ${textColor}`}>
          Testimonials
       </h1>
 
       {testimonials.map((test, i) => (
-        <div key={i} className={`bg-[#2b2b2b] mb-[45px] overflowY-auto rounded-xl min-w-[300px] max-w-[500px] h-[300px] relative flex flex-1 flex-col justify-start items-center w-full text-white`}>
+        <div key={i} className={`bg-textBg mb-[45px] overflowY-auto rounded-xl min-w-[300px] max-w-[500px] h-[300px] relative flex flex-1 flex-col justify-start items-center w-full text-white`}>
 
           {test.img && 
           <div className="absolute top-[-60px] left-[20px] rounded-full w-[110px] h-[110px] flex items-center justify-center">
@@ -28,9 +28,9 @@ const Testimonials = ({ textColor, darkMode }) => {
             {test.title}
           </h1>
          
-          <div className="absolute top-[60px] right-[20px] flex flex-row">
+          <div className="absolute top-[60px] right-[20px] flex gap-[5px] flex-row">
             {test.stars.map((star,i) => (
-              <i key={i} className="fa-solid fa-star"></i>
+             <img className="w-[17px]" src="/star.png" alt=""></img>
             ))}
           </div>
           <p className="absolute top-[85px] p-[15px] max-h-[200px] overflow-y-auto">

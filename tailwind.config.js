@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'textBg': '#202020'
+      },
       screens: {
         'supersmall': '335px'
       }

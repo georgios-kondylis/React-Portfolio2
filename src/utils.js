@@ -121,14 +121,14 @@ export const testimonials = [
     img: "/MP-bg.png",
     title: "Instructor at Techover Academy",
     stars: ["1", "2", "3", "4", "5"],
-    review: "Georgios was one of my students at TechOver Academy, and his passion for coding was evident from day one. His dedication, problem-solving skills, and creativity in front-end development stood out in every project. He constantly pushes himself to improve, and it's inspiring to see his growth as a developer."
+    review: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nesciunt a eaque molestias vel totam nobis sit ipsum sed, doloremque fuga consequatur aliquam cumque itaque provident excepturi autem ducimus veniam?"
   },
   {
     name: "Pashalis V.",
     img: "/pas.jpg",
     title: "Executive Chef at Lotus & Olive",
     stars: ["1", "2", "3", "4", "5"],
-    review: "Georgios has an incredible eye for detail, and that reflects in both his coding and his love for food. His ability to create smooth, visually appealing websites is impressive. I have no doubt that the same discipline and creativity he applies in programming would make him excel in any field he chooses."
+    review: "Georgios has an incredible eye for detail, and that reflects in his coding. His ability to create smooth, visually appealing websites is impressive. I have no doubt that the same discipline and creativity he applies in programming would make him excel in any field he chooses."
   },
   {
     name: "Paraschos K.",

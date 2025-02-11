@@ -93,9 +93,9 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
         <div className="flex flex-col gap-[30px] justify-start max-lg:w-full max-w-[600px] lg:w-[55%]">
           {/* this text is lg screens only */}
           <div
-            className={`lg:hidden text-[1.3rem] items-start max-sm:items-center flex ${textColor} flex-col`}
+            className={`lg:hidden ml-[2px] text-[1.3rem] items-start max-sm:items-center flex ${textColor} flex-col`}
           >
-            <h1 className={`text-wrap max-sm:text-center`}>
+            <h1 className={` text-wrap max-sm:text-center`}>
               Interested in collaborating or learning more about my projects?
             </h1>
             <div className="flex flex-wrap items-center gap-[12px]">
@@ -124,7 +124,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="text"
-                  placeholder="First Name"
+                  placeholder="First Name *"
                   value={formDetails.FirstName}
                   name="FirstName"
                   className={`p-2 rounded w-full bg-transparent  ${rmv_focus_border} ${dynamicBorder}`}
@@ -138,7 +138,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
                 />
                 <input
                   type="text"
-                  placeholder="Last Name"
+                  placeholder="Last Name *"
                   value={formDetails.LastName}
                   name="LastName"
                   className={`p-2 rounded w-full bg-transparent ${rmv_focus_border} ${dynamicBorder}`}
@@ -155,7 +155,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
               <div className="grid grid-cols-2 gap-4">
                 <input
                   type="tel"
-                  placeholder="Phone Number"
+                  placeholder="Phone Number *"
                   value={formDetails.PhoneNumber}
                   name="PhoneNumber"
                   className={`p-2 rounded w-full bg-transparent ${rmv_focus_border} ${dynamicBorder}`}
@@ -170,7 +170,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
 
                 <input
                   type="email"
-                  placeholder="Email"
+                  placeholder="Email *"
                   value={formDetails.Email}
                   name="Email"
                   className={`p-2 rounded w-full bg-transparent ${rmv_focus_border} ${dynamicBorder} `}
@@ -186,7 +186,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
 
               <input
                 type="text"
-                placeholder="Subject"
+                placeholder="Subject *"
                 value={formDetails.Subject}
                 name="Subject"
                 className={`p-2 rounded w-full bg-transparent ${rmv_focus_border} ${dynamicBorder}`}
@@ -280,7 +280,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
               <button
                 className={`HeroBTN px-[10px] rounded-[4px] border border-[#f5f3dc] text-[#f5f3dc] bg-[#171717]`}
               >
-                <a className="flex items-center gap-[3px]" href="#">
+                <a className="flex items-center gap-[3px]" target="blank" href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/">
                   Linked<i className={`fa-brands fa-linkedin`}></i>
                 </a>
               </button>
