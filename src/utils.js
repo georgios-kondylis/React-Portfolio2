@@ -76,7 +76,7 @@ import MUI from "./assets/icons/MUI.png";
       repo: 'https://github.com/georgios-kondylis/Klarna',
       skillImages: [node, js],
       img: klarna,
-      description: "Developed a mock store and integrated Klarna's checkout system using Ngrok's gateway URL.",
+      description: "I built a web service integrating the Klarna Checkout API using Node.js and Express. The project features real API calls to create a working checkout solution, simulating a real purchase process with products from the FakeStore API.",
     },
     {
       id: 7,

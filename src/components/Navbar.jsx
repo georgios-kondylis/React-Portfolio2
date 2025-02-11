@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SwichBtn from "./SwichBtn";
+import { Button } from "@mui/material";
 
 const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsOpen, toggleSideNav }) => {
 
@@ -37,22 +38,139 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
       </div>
      
       {sideNavIsOpen && <div onClick={() => setSideNavIsOpen(false)} className={`fixed top-[70px] h-[100vh] left-0 bottom-0 right-0 bg-[#04040498] z-0`}></div> }
-      
-      <div className={`fixed top-0 left-0 ${!sideNavIsOpen ? 'right-[100%] opacity-0 pointer-events-none' :  'right-[60%]' } bottom-0 ${darkMode? 'bg-[#121212]' : 'bg-[#eee4d9]'}  z-50 transition-all ease-in-out duration-300 border-r border-r-[#5c5c5c49]
+
+      {/* -------  sideNav  ------- */}
+      <div className={`px-[5px] fixed top-0 left-0 ${!sideNavIsOpen ? 'right-[100%] opacity-0 pointer-events-none' :  'right-[60%]' } bottom-0 ${darkMode? 'bg-[#121212]' : 'bg-[#eee4d9]'}  z-50 transition-all ease-in-out duration-300 border-r border-r-[#5c5c5c49]
           flex flex-col items-start`}>
   
-        <div className="border-b w-full flex flex-col items-center justify-center h-[70px] border-b-[rgba(225,225,225,0.07)] max-sm:hidden">
-          <h1 className={`${textColor} text-[1.5rem] max-sm:text-[1.3rem] text-nowrap`}>Georgios <span className={`${darkMode? 'text-[#f5f3dc] ' : textColor} font-extrabold`}>Kondylis</span></h1>            
+        <div className={`border-b pl-[10px] w-full flex flex-col items-start justify-center h-[70px] ${darkMode? 'border-b-[rgba(225,225,225,0.07)]' : 'border-b-[rgba(16,16,16,0.25)]'} `}>
+          <h1 className={`${textColor} text-[1.9rem] text-nowrap`}>G <span className={`${darkMode? 'text-[#f5f3dc] ' : textColor} font-extrabold`}>K</span></h1>            
         </div> 
-
-        <div className={`${textColor} text-[1.2rem] max-md:text-[1.2rem] max-sm:mt-[50px] flex flex-col items-start gap-5 m-[25px]`}> {/* Navlinks */}
-          <a href="" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}>Home</a>
-          <a href="" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}>About</a>
-          <a href="" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}>Projects</a>
-          <a href="" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}>Contact</a>
-        </div>
        
+        <div className={`${!sideNavIsOpen ? ' opacity-0 pointer-events-none' :  '' } w-full ${textColor} max-md:text-[1rem] flex flex-col items-start gap-[5px] px-[0px] my-[20px]`}> {/* Navlinks */}
+          <Button
+            href="#home"
+            fullWidth sx={{
+              color: darkMode? 'white' : 'black',
+              backgroundColor: 'transparent',
+              paddingY: '5px',
+              paddingX: '10px',
+              borderRadius: '6px',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.1s ease-in-out',
+              '&:hover': {
+                backgroundColor: darkMode ? '#222222' : '#00000032',
+                color: darkMode ? '#f5f3dc' : '',
+              },
+            }}
+            onClick={()=> setSideNavIsOpen(false)}
+          >
+            <a href="#home"><i className="fa-solid fa-house-user"></i> Home</a>
+          </Button>
 
+          <Button
+            href="#about"
+            fullWidth sx={{
+              color: darkMode? 'white' : 'black',
+              backgroundColor: 'transparent',
+              paddingX: '10px',
+              borderRadius: '6px',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.1s ease-in-out',
+              '&:hover': {
+                backgroundColor: darkMode ? '#222222' : '#00000032',
+                color: darkMode ? '#f5f3dc' : '',
+              },
+            }}
+            onClick={()=> setSideNavIsOpen(false)}
+          >
+            <a href="#about" className="flex items-center gap-[5px]"> <i className="fa-solid fa-address-card"></i>About</a>
+          </Button>
+
+          <Button
+            href="#projects"
+            fullWidth sx={{
+              color: darkMode? 'white' : 'black',
+              backgroundColor: 'transparent',
+              paddingTop: '7px',
+              paddingBottom: '5px',
+              paddingX: '10px',
+              borderRadius: '6px',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.1s ease-in-out',
+              '&:hover': {
+                backgroundColor: darkMode ? '#222222' : '#00000032',
+                color: darkMode ? '#f5f3dc' : '',
+              },
+            }}
+            onClick={()=> setSideNavIsOpen(false)}
+          >
+            <a href="#projects"className="flex items-center gap-[5px]" > <i className="fa-solid fa-diagram-project"></i>Projects</a>
+          </Button>
+
+          <Button
+            fullWidth sx={{
+              color: darkMode? 'white' : 'black',
+              backgroundColor: 'transparent',
+              paddingTop: '7px',
+              paddingBottom: '5px',
+              paddingX: '10px',
+              borderRadius: '6px',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.1s ease-in-out',
+              '&:hover': {
+                backgroundColor: darkMode ? '#222222' : '#00000032',
+                color: darkMode ? '#f5f3dc' : '',
+              },
+            }}
+          >
+            <a href="#"className="flex items-center gap-[5px]" ><i className="fa-solid fa-comments"></i>Testimonials</a>
+          </Button>
+
+          <Button
+            href="#contact"
+            fullWidth sx={{
+              color: darkMode? 'white' : 'black',
+              backgroundColor: 'transparent',
+              paddingTop: '7px',
+              paddingBottom: '5px',
+              paddingX: '10px',
+              borderRadius: '6px',
+              display: 'flex',
+              justifyContent: 'flex-start',
+              alignItems: 'center',
+              gap: '10px',
+              transition: 'all 0.1s ease-in-out',
+              '&:hover': {
+                backgroundColor: darkMode ? '#222222' : '#00000032',
+                color: darkMode ? '#f5f3dc' : '',
+              },
+            }}
+            onClick={()=> setSideNavIsOpen(false)}
+          >
+            <a href="#contact" className="flex items-center gap-[5px]" ><i className="fa-solid fa-message"></i>Contact</a>
+          </Button>
+          {/* <br /><br />
+
+          <a href="" className={`flex ml-[10px] items-center gap-[10px] ${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}> <i className="fa-solid fa-house-user"></i> Home</a>
+          <a href="" className={`flex ml-[10px] items-center gap-[10px] ${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}> <i className="fa-solid fa-address-card"></i>About</a>
+          <a href="" className={`flex ml-[10px] items-center gap-[10px] ${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}> <i className="fa-solid fa-diagram-project"></i>Projects</a>
+          <a href="" className={`flex ml-[10px] items-center gap-[10px] ${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}> <i className="fa-solid fa-comments"></i>Testimonials</a>
+          <a href="" className={`flex ml-[10px]  items-center gap-[10px] ${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'} hover:translate-y-[-3px] hover:scale-110 transition-all ease-in-out duration-300`}> <i className="fa-solid fa-message"></i>Contact</a> */}
+        </div>
+      
       </div>  
     </div>
   );

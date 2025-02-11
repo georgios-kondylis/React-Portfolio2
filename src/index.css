@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .HeroBTN {
@@ -31,26 +31,26 @@ body {
 }
 
 .HeroBTN::after {
-  content: ""; 
+  content: "";
   position: absolute;
   width: 40%;
   height: 300%;
-  background:linear-gradient(90deg, #00000000, #e8e8e859, #00000000);
+  background: linear-gradient(90deg, #00000000, #e8e8e859, #00000000);
   top: 50%;
   left: -15%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
   transition: all 0.9s ease;
   position: none;
 }
 .HeroBTN:hover::after {
-  content: ""; 
+  content: "";
   position: absolute;
   width: 30%;
   height: 300%;
-  background:linear-gradient(90deg, #00000000, #e8e8e859, #00000000);
+  background: linear-gradient(90deg, #00000000, #e8e8e859, #00000000);
   top: 50%;
   left: 200%;
-  transform: translate(-50%, -50%); 
+  transform: translate(-50%, -50%);
 }
 
 /* h1 {
@@ -58,3 +58,4 @@ body {
 } */
 
 /* main dark bg-[#121212] */
+
