@@ -98,7 +98,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
             <h1 className={` text-wrap max-sm:text-center`}>
               Interested in collaborating or learning more about my projects?
             </h1>
-            <div className="flex flex-wrap items-center gap-[12px]">
+            <div className="flex flex-wrap max-md:justify-center items-center gap-[12px]">
               <h1 className={`text-nowrap`}>
                 {" "}
                 Connect with me by filling the form or on{" "}
