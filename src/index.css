@@ -53,6 +53,10 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.HEADER-mb {
+  margin-bottom: 90px;
+}
+
 /* h1 {
   color: #f5f3dc; beige hover
 } */

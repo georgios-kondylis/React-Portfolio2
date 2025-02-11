@@ -5,10 +5,10 @@ const AboutSection = ({ textColor, darkMode }) => {
   return (
     <div
       id="about"
-      className="bg-[#121212] py-[60px] max-md:mt-[100px] px-[20px] md:px-[60px] lg:px-[100px]"
+      className="bg-[#121212] py-[60px] max-sm:py-[10px] max-md:mt-[100px] px-[20px] md:px-[60px] lg:px-[100px]"
     >
-      <h1 className="mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] mb-[70px] text-white">
-         More About Me & My Skills
+      <h1 className="mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] HEADER-mb text-white">
+      Professional Background 
       </h1>
 
       <div className="grid justify-end grid-cols-1 md:grid-cols-[40%_60%] gap-[15px] w-full items-center">

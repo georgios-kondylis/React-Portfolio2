@@ -4,6 +4,7 @@ import AboutSection from './AboutSection';
 import Projects from './Projects';
 import Contact from './Contact';
 import Footer from './Footer';
+import Testimonials from './Testimonials';
 
 
 const Home = ({ darkMode, setDarkMode, textColor2, textColor, sideNavIsOpen, setSideNavIsOpen, toggleSideNav }) => {
@@ -15,6 +16,7 @@ const Home = ({ darkMode, setDarkMode, textColor2, textColor, sideNavIsOpen, set
       <HeroSection textColor={textColor} textColor2={textColor2} darkMode={darkMode}/>
       <AboutSection textColor={textColor} textColor2={textColor2} darkMode={darkMode}/>
       <Projects textColor={textColor} darkMode={darkMode}/>
+      <Testimonials darkMode={darkMode} textColor={textColor} textColor2={textColor2}/>
       <Contact darkMode={darkMode} textColor={textColor} textColor2={textColor2} dynamicBorder={dynamicBorder}/>
       <Footer textColor={textColor} textColor2={textColor2} darkMode={darkMode} />
     </div>

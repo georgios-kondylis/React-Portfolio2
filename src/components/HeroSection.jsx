@@ -6,7 +6,7 @@ import { margins_paddings } from "../utils";
 
 const HeroSection = ({ textColor, textColor2, darkMode }) => {
   return (
-    <div id="home" className={`flex gap-[20px] min-h-[100vh] justify-between max-md:justify-center max-md:flex-col-reverse max-md:h-[100vh] items-center w-full ${margins_paddings} transition-all ease-in-out duration-300`}>
+    <div id="home" className={`flex gap-[20px] min-h-[90vh] justify-between max-md:justify-center max-md:flex-col-reverse max-md:h-[100vh] items-center w-full ${margins_paddings} transition-all ease-in-out duration-300`}>
       {/* Text Section */}
       <div className="max-md:w-[100%] md:w-[50%] h-[450px] max-sm:h-[370px] flex flex-col justify-between gap-2 ">
 

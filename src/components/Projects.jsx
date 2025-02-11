@@ -21,7 +21,7 @@ const Projects = ({ textColor, darkMode }) => {
 
   return (
     <div id="projects" className="w-full px-4 md:px-12 lg:px-24 flex flex-col justify-center items-center py-[60px] text-white">
-      <h1 className={`${textColor} py-[30px] text-[2.5rem] max-sm:text-[1.8rem] font-extrabold mb-6`}>
+      <h1 className={`${textColor} HEADER-mb text-[2.5rem] max-sm:text-[1.8rem] font-extrabold mb-6`}>
         Projects
       </h1>
 
