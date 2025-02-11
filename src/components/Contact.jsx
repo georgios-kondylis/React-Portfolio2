@@ -81,7 +81,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
 
   return (
     <>
-      <h1 className="w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] text-white">
+      <h1 className={`w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] ${textColor}`}>
          Contact
       </h1>
 

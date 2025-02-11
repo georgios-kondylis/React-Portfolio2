@@ -131,7 +131,7 @@ const Projects = ({ textColor, darkMode }) => {
               ${
                 currentSlide === index
                   ? `bg-[#f5f3dc] ${
-                      !darkMode ? "border border-[#121212]" : ""
+                      !darkMode ? "border-[3px] border-[#303030] bg-transparent" : ""
                     } text-black scale-110`
                   : "bg-[#303030]"
               }`}

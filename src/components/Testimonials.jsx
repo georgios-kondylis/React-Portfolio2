@@ -5,7 +5,7 @@ import { margins_paddings } from "../utils";
 const Testimonials = ({ textColor, darkMode }) => {
   return (
     <div className={` ${margins_paddings} flex py-[20px] justify-center flex-wrap gap-[20px]`}>
-      <h1 className="w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] HEADER-mb text-white">
+      <h1 className={`w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] HEADER-mb ${textColor}`}>
          Testimonials
       </h1>
 
