@@ -131,6 +131,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
                 transition: 'all 0.1s ease-in-out',
                 '&:hover': {backgroundColor: darkMode ? '#222222' : '#00000032', },
               }}
+              onClick={()=> setSideNavIsOpen(false)}
             >
             <RateReviewIcon sx={{width: '18px'}}/>Testimonials
             </Button>
