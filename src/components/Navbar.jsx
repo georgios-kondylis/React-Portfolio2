@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import SwichBtn from "./SwichBtn";
 import { Button } from "@mui/material";
+import { div } from "framer-motion/client";
+import RateReviewIcon from '@mui/icons-material/RateReview';
 
 const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsOpen, toggleSideNav }) => {
 
@@ -16,9 +18,13 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
       id="NAVBAR"
       className={`${NavbarStyles}`}>
 
-      <h1 className={`${textColor} text-[1.5rem] max-sm:text-[1.3rem] text-nowrap`}>Georgios <span className={`${darkMode? 'text-[#f5f3dc] ' : textColor} font-extrabold`}>Kondylis</span></h1>
+      {!sideNavIsOpen ?
+       <div className={`w-[250px]`}>
+         <img className={`w-full`} src={darkMode? `/logoWhite.png` : `/logoBlack.png`} alt="" />
+       </div>
+        : <div></div>}
       
-      <div className={`${textColor} text-[1.2rem] max-md:text-[1rem] flex items-center gap-4 max-lg:gap-[15px] max-sm:hidden`}> {/* Navlinks */}
+      <div className={`${textColor} lg:mr-[70px] text-[1.2rem] max-md:text-[1rem] flex items-center gap-4 max-lg:gap-[15px] max-sm:hidden transition-all ease-out duration-300`}> {/* Navlinks */}
         <a href="#home" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'}  hover:scale-110 transition-all ease-in-out duration-300 `}>Home</a>
         <a href="#about" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'}  hover:scale-110 transition-all ease-in-out duration-300`}>About</a>
         <a href="#projects" className={`${!darkMode? 'hover:text-[#4a4a4a]' : 'hover:text-[#f5f3dc]'}  hover:scale-110 transition-all ease-in-out duration-300`}>Projects</a>
@@ -27,10 +33,8 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
 
       <div className="flex items-center gap-[20px]">
           <SwichBtn darkMode={darkMode} setDarkMode={setDarkMode}/>
-
            <div className={`${textColor}  flex flex-col gap-[6px] sm:hidden cursor-pointer`} 
                 onClick={toggleSideNav}>
-
               <span className={`${!darkMode? 'bg-black' : 'bg-white'} w-[25px] h-[2px] rounded-full  ${sideNavIsOpen ? 'rotate-45 translate-y-[8px]' : ''} transition-all ease-in-out duration-300`}></span>
               <span className={`${!darkMode? 'bg-black' : 'bg-white'} w-[25px] h-[2px] rounded-full ${sideNavIsOpen ? 'opacity-0' : ''} transition-all ease-in-out duration-300`}></span>
               <span className={`${!darkMode? 'bg-black' : 'bg-white'} w-[25px] h-[2px] rounded-full ${sideNavIsOpen ? '-rotate-45 translate-y-[-7px]' : ''} transition-all ease-in-out duration-300`}></span>
@@ -43,8 +47,8 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
       <div className={`px-[5px] fixed top-0 left-0 ${!sideNavIsOpen ? 'right-[100%] opacity-0 pointer-events-none' :  'right-[60%]' } bottom-0 ${darkMode? 'bg-[#121212]' : 'bg-[#eee4d9]'}  z-50 transition-all ease-in-out duration-300 border-r border-r-[#5c5c5c49]
           flex flex-col items-start`}>
   
-        <div className={`border-b pl-[10px] w-full flex flex-col items-start justify-center h-[70px] ${darkMode? 'border-b-[rgba(225,225,225,0.07)]' : 'border-b-[rgba(16,16,16,0.25)]'} `}>
-          <h1 className={`${textColor} text-[1.9rem] text-nowrap`}>G <span className={`${darkMode? 'text-[#f5f3dc] ' : textColor} font-extrabold`}>K</span></h1>            
+        <div className={`border-b pl-[0px] w-full flex items-center justify-center h-[70px] ${darkMode? 'border-b-[rgba(225,225,225,0.07)]' : 'border-b-[rgba(16,16,16,0.25)]'} `}>
+          <img className="w-[170px]" src={`${darkMode? '/logoWhite.png' : '/logoBlack.png'}`} alt="" />
         </div> 
        
         <div className={`${!sideNavIsOpen ? ' opacity-0 pointer-events-none' :  '' } w-full ${textColor} max-md:text-[1rem] flex flex-col items-start gap-[5px] px-[0px] my-[20px]`}> {/* Navlinks */}
@@ -68,7 +72,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
             }}
             onClick={()=> setSideNavIsOpen(false)}
           >
-            <a href="#home"><i className="fa-solid fa-house-user"></i> Home</a>
+            <i className="fa-solid fa-house-user"></i> Home
           </Button>
 
           <Button
@@ -90,7 +94,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
             }}
             onClick={()=> setSideNavIsOpen(false)}
           >
-            <a href="#about" className="flex items-center gap-[5px]"> <i className="fa-solid fa-address-card"></i>About</a>
+            <i className="fa-solid fa-address-card"></i>About
           </Button>
 
           <Button
@@ -114,7 +118,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
             }}
             onClick={()=> setSideNavIsOpen(false)}
           >
-            <a href="#projects"className="flex items-center gap-[5px]" > <i className="fa-solid fa-diagram-project"></i>Projects</a>
+          <i className="fa-solid fa-diagram-project"></i>Projects
           </Button>
 
           <Button
@@ -128,7 +132,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
               display: 'flex',
               justifyContent: 'flex-start',
               alignItems: 'center',
-              gap: '10px',
+              gap: '5px',
               transition: 'all 0.1s ease-in-out',
               '&:hover': {
                 backgroundColor: darkMode ? '#222222' : '#00000032',
@@ -136,7 +140,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
               },
             }}
           >
-            <a href="#"className="flex items-center gap-[5px]" ><i className="fa-solid fa-comments"></i>Testimonials</a>
+           <RateReviewIcon sx={{width: '18px'}}/>Testimonials
           </Button>
 
           <Button
@@ -160,7 +164,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
             }}
             onClick={()=> setSideNavIsOpen(false)}
           >
-            <a href="#contact" className="flex items-center gap-[5px]" ><i className="fa-solid fa-message"></i>Contact</a>
+           <i className="fa-solid fa-message"></i>Contact
           </Button>
           {/* <br /><br />
 
@@ -179,3 +183,6 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
 export default Navbar;
 
 // bg-[#eee4d9]
+
+
+
