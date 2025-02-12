@@ -117,7 +117,8 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
               <button
                 className={`HeroBTN px-[10px] rounded-[4px] border border-[#f5f3dc] text-[#f5f3dc] bg-[#171717]`}
               >
-                <a className="flex items-center gap-[3px]" href="#">
+          <a target='blank' href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/"><i className={`fa-brands fa-linkedin text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
+                <a className="flex items-center gap-[3px]" href="">
                   Linked<i className={`fa-brands fa-linkedin`}></i>
                 </a>
               </button>
