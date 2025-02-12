@@ -6,7 +6,6 @@ import restApi from "../assets/icons/RESTapi.png"
 import MUI from "../assets/icons/MUI.png";
 import { margins_paddings } from '../utils';
 
-
 const Footer = ({darkMode, textColor, textColor2}) => {
   return (
     <div className={`flex max-md:flex-col-reverse max-md:items-center py-[40px] gap-[20px] w-full items-start justify-between ${margins_paddings}`}>

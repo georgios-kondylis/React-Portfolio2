@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { motion } from 'framer-motion';
 import { projects } from "../utils";
 
 const Projects = ({ textColor, darkMode }) => {
@@ -21,12 +21,24 @@ const Projects = ({ textColor, darkMode }) => {
 
   return (
     <div id="projects" className="w-full px-4 md:px-12 lg:px-24 flex flex-col justify-center items-center py-[60px] text-white">
-      <h1 className={`${textColor} HEADER-mb text-[2.5rem] max-sm:text-[1.8rem] font-extrabold mb-6`}>
-        Projects
-      </h1>
+      <motion.div 
+          initial={{opacity:0, y: '50px'}}
+          whileInView={{opacity:1, y: '0px'}}
+          viewport={{margin: '-100px'}}
+          transition={{ duration: 0.7 }}
+       >
+        <h1 className={`${textColor} HEADER-mb text-[2.5rem] max-sm:text-[1.8rem] font-extrabold mb-6`}>
+          Projects
+        </h1>
+      </motion.div>
 
       {/* Grid Container */}
-      <div className="overflow-hidden w-full">
+      <motion.div className="overflow-hidden w-full"
+           initial={{opacity:0, y: '50px'}}
+           whileInView={{opacity:1, y: '0px'}}
+           viewport={{margin: '-100px'}}
+           transition={{ duration: 0.7 }}
+      >
         <div
           className="grid transition-transform duration-500 ease-in-out"
           style={{
@@ -70,7 +82,6 @@ const Projects = ({ textColor, darkMode }) => {
                       )}
                       
                      {hoveredProject === project.id ?  <div className={`absolute inset-0 backdrop-blur-sm w-full flex flex-col justify-center items-center text-white transition-all duration-700 ease-in-out`} ></div> : null} 
-
 
                       <div
                         className={` 
@@ -119,7 +130,7 @@ const Projects = ({ textColor, darkMode }) => {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Navigation Buttons */}
       <div className="w-full py-6 flex gap-[15px] max-sm:gap-[8px] justify-center">

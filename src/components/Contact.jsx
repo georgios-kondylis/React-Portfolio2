@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { margins_paddings } from "../utils";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { AnimatePresence, motion } from "framer-motion";
-import Skills2 from "./Skills2";
 
 const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
   // ------------------ Custom styles variables  ------------------ //
@@ -81,9 +80,16 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
 
   return (
     <>
-      <h1 className={`w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] ${textColor}`}>
-         Contact
-      </h1>
+      <motion.div
+           initial={{opacity:0, y: '50px'}}
+           whileInView={{opacity:1, y: '0px'}}
+           viewport={{margin: '-100px'}}
+           transition={{ duration: 0.7 }}
+      >
+        <h1 className={`w-full mx-auto text-[2.5rem] text-center max-sm:text-[1.8rem] ${textColor}`}>
+          Contact
+        </h1>
+      </motion.div>
 
       <section
         id="contact"
@@ -91,13 +97,18 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
       >
         {/* Form */}
         <div className="flex flex-col gap-[30px] justify-start max-lg:w-full max-w-[600px] lg:w-[55%]">
-          {/* this text is lg screens only */}
-          <div
-            className={`lg:hidden ml-[2px] text-[1.3rem] items-start max-sm:items-center flex ${textColor} flex-col`}
+          {/* this text is sm screens only */}
+          <motion.div className={`lg:hidden ml-[2px] text-[1.3rem] items-start max-sm:items-center flex ${textColor} flex-col`}
+                      initial={{opacity:0, y: '50px'}}
+                      whileInView={{opacity:1, y: '0px'}}
+                      viewport={{margin: '-100px'}}
+                      transition={{ duration: 0.7 }}
           >
+            <motion.div>
             <h1 className={` text-wrap max-sm:text-center`}>
               Interested in collaborating or learning more about my projects?
             </h1>
+            </motion.div>
             <div className="flex flex-wrap max-md:justify-center items-center gap-[12px]">
               <h1 className={`text-nowrap`}>
                 {" "}
@@ -111,7 +122,7 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
                 </a>
               </button>
             </div>
-          </div>
+          </motion.div>
 
           <div
             id="form-container"
@@ -305,9 +316,3 @@ const Contact = ({ darkMode, textColor, textColor2, dynamicBorder }) => {
 
 export default Contact;
 
-{
-  /* <div className={`${textColor} flex h-full flex-col justify-end items-center w-full lg:w-[43%]`}>
-        <h1 className="mb-[20px] w-full text-center text-[2rem]">Skills</h1>
-        <Skills2  textColor={textColor} darkMode={darkMode}/>
-      </div> */
-}
