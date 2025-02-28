@@ -28,7 +28,7 @@ const HeroSection = ({ textColor, textColor2, darkMode }) => {
          
 
           <div className={`${textColor} flex max-sm:justify-center gap-[20px]`}>
-              <button className={`HeroBTN px-[10px] py-[5px] rounded-[4px] bg-[#f5f3dc] text-[black] ${!darkMode? 'border-[#262626] border-[1px] bg-transparent' : 'border-none'}`}>Projects</button>
+              <button className={`HeroBTN px-[10px] py-[5px] rounded-[4px] bg-[#f5f3dc] text-[black] ${!darkMode? 'border-[#262626] border-[1px] bg-transparent' : 'border-none'}`}><a href="#projects">Projects</a></button>
               <button className={`HeroBTN px-[10px] py-[5px] rounded-[4px] border border-[#f5f3dc] text-[#f5f3dc] ${!darkMode && 'bg-[#171717] border-none'}`}>
                 Download CV <DownloadIcon/>
               </button>
