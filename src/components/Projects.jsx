@@ -106,7 +106,7 @@ const Projects = ({ textColor, darkMode }) => {
                           ))}
                         </div>
 
-                        {project.name !== "Klarna Checkout" ? (
+                        
                           <div className="absolute flex gap-[15px] p-[20px] bottom-0 right-0">
                             <a href={project.live} target="_blank">
                               {" "}
@@ -116,13 +116,7 @@ const Projects = ({ textColor, darkMode }) => {
                               <i className="hover:text-[#f5f3dc] hover:scale-125 text-[1.4rem] transition-all duration-300 ease-in-out fa-brands fa-github"></i>
                             </a>
                           </div>
-                        ) : (
-                          <div className="absolute flex p-[20px] bottom-0 right-0">
-                            <a href={project.repo} target="_blank">
-                              <i className="hover:text-[#f5f3dc] hover:scale-125 text-[1.4rem] transition-all duration-300 ease-in-out fa-brands fa-github"></i>
-                            </a>
-                          </div>
-                        )}
+                       
                       </div>
                     </div>
                   </div>

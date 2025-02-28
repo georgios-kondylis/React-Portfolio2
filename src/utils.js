@@ -46,13 +46,13 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Spotify Clone",
-    live: "https://inquisitive-valkyrie-b87165.netlify.app/",
-    repo: "https://github.com/georgios-kondylis/Spotify_Clone.",
-    skillImages: [react, MUI, restApi],
-    img: spotify,
+    name: "Klarna Checkout",
+    live: "https://klarna.onrender.com/",
+    repo: "https://github.com/georgios-kondylis/Klarna",
+    skillImages: [node, js],
+    img: klarna,
     description:
-      "Clone of Spotify's interface with custom features, utilizing auth keys and API tokens for user interaction.",
+      "I built a web service integrating the Klarna Checkout API using Node.js and Express. The project features real API calls to create a working checkout solution, simulating a real purchase process with products from the FakeStore API.",
   },
   {
     id: 4,
@@ -76,12 +76,13 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Klarna Checkout",
-    repo: "https://github.com/georgios-kondylis/Klarna",
-    skillImages: [node, js],
-    img: klarna,
+   name: "Spotify Clone",
+    live: "https://inquisitive-valkyrie-b87165.netlify.app/",
+    repo: "https://github.com/georgios-kondylis/Spotify_Clone.",
+    skillImages: [react, MUI, restApi],
+    img: spotify,
     description:
-      "I built a web service integrating the Klarna Checkout API using Node.js and Express. The project features real API calls to create a working checkout solution, simulating a real purchase process with products from the FakeStore API.",
+      "Clone of Spotify's interface with custom features, utilizing auth keys and API tokens for user interaction.",
   },
   {
     id: 7,
