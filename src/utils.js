@@ -1,13 +1,13 @@
-import appleFull from "./assets/Project pics/applebig.png";
-import brainwavefull from "./assets/Project pics/Brainwave.png";
-import spotify from "./assets/Project pics/spotiBig.png";
-import L_O from "./assets/Project pics/lotusOlivePC.png";
-import flagapp from "./assets/Project pics/flagsPC.png";
-import pong from "./assets/Project pics/pong2.mp4";
-import snake from "./assets/Project pics/snake.mp4";
-import klarna from "./assets/Project pics/Klarna.jpg";
-import passGen from "./assets/Project pics/Linkedin-pw-gen-v2.jpg";
-import passGen2 from "./assets/Project pics/pass2.png";
+import appleFull from "./assets/Project_pics/applebig.png";
+import brainwavefull from "./assets/Project_pics/Brainwave.png";
+import spotify from "./assets/Project_pics/spotiBig.png";
+import L_O from "./assets/Project_pics/lotusOlivePC.png";
+import flagapp from "./assets/Project_pics/flagsPC.png";
+import pong from "./assets/Project_pics/pong2.mp4";
+import snake from "./assets/Project_pics/snake.mp4";
+import klarna from "./assets/Project_pics/Klarna.jpg";
+import passGen from "./assets/Project_pics/Linkedin-pw-gen-v2.jpg";
+import passGen2 from "./assets/Project_pics/pass2.png";
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
