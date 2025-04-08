@@ -37,7 +37,7 @@ const HeroSection = ({ textColor, textColor2, darkMode }) => {
 
           <div className="flex  max-sm:mx-auto flex-col">
             <div className={`${textColor2} flex gap-[5px]`}><CheckIcon/><p className={`${textColor}`}> Certified Web Developer </p></div>
-            <div className={`${textColor2} flex gap-[5px]`}><CheckIcon/><p className={`${textColor}`}>500+ Hours of coding</p></div>
+            <div className={`${textColor2} flex gap-[5px]`}><CheckIcon/><p className={`${textColor}`}>1000+ Hours of coding</p></div>
             <div className={`${textColor2} flex gap-[5px]`}><CheckIcon/><p className={`${textColor}`}>30+ Projects Completed</p></div>
           </div>
           

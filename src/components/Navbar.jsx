@@ -43,7 +43,7 @@ const Navbar = ({ darkMode, setDarkMode, textColor, sideNavIsOpen, setSideNavIsO
         {sideNavIsOpen && <div onClick={() => setSideNavIsOpen(false)} className={`fixed top-[70px] h-[100vh] left-0 bottom-0 right-0 bg-[#04040498] z-0`}></div> }
 
         {/* -------  sideNav  ------- */}
-        <div className={`px-[5px] fixed top-0 left-0 ${!sideNavIsOpen ? 'right-[100%] opacity-0 pointer-events-none' :  'right-[60%]' } bottom-0 ${darkMode? 'bg-[#121212]' : 'bg-[#eee4d9]'}  z-50 transition-all ease-in-out duration-300 border-r border-r-[#5c5c5c49]
+        <div className={`px-[5px] fixed top-0 left-0 ${!sideNavIsOpen ? 'right-[100%] opacity-0 pointer-events-none' :  'right-[60%] max-w-[250px]' } bottom-0 ${darkMode? 'bg-[#121212]' : 'bg-[#eee4d9]'}  z-50 transition-all ease-in-out duration-300 border-r border-r-[#5c5c5c49]
             flex flex-col items-start`}>
     
           <div className={`border-b pl-[10px] w-full flex items-center justify-start h-[70px] ${darkMode? 'border-b-[rgba(225,225,225,0.07)]' : 'border-b-[rgba(16,16,16,0.25)]'} `}>
