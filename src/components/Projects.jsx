@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { motion } from 'framer-motion';
 import { projects } from "../utils";
+import mongoDB from "../assets/icons/mongodbicon.png";
+
 
 const Projects = ({ textColor, darkMode }) => {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -101,7 +103,8 @@ const Projects = ({ textColor, darkMode }) => {
                             <img
                               key={i}
                               src={img}
-                              className="object-contain max-sm:w-[30px] w-[20px] lg:w-[30px]"
+                              className={`object-contain max-sm:w-[30px] w-[20px] lg:w-[30px]
+                                 ${img === mongoDB ? 'w-[13px] max-sm:w-[18px] lg:w-[20px]' : ''}`}
                             />
                           ))}
                         </div>

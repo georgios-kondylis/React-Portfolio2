@@ -7,6 +7,8 @@ import pong from "./assets/Project_pics/pong2.mp4";
 import snake from "./assets/Project_pics/snake.mp4";
 import klarna from "./assets/Project_pics/klarna.jpg";
 import passGen2 from "./assets/Project_pics/pass2.png";
+import financeApp from "./assets/Project_pics/P_Finance_App.png"
+import mongoDB from "./assets/icons/mongodbicon.png"
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
@@ -22,13 +24,13 @@ import MUI from "./assets/icons/MUI.png";
 export const projects = [
   {
     id: 1,
-    name: "Apple Clone",
-    live: "https://giorgosogamiastsreact.netlify.app//",
-    img: appleFull,
-    repo: "https://github.com/georgios-kondylis/Georgios_Apple",
-    skillImages: [react, tailwind, gsap, threeJS],
+    name: "Personal Finace App",
+    live: "https://georgiospersonalfinanceapp.vercel.app/sign-in",
+    img: financeApp,
+    repo: "https://github.com/georgios-kondylis/PersonalFinanceApp",
+    skillImages: [react, tailwind, MUI, mongoDB, restApi ],
     description:
-      "An Apple clone featuring an interactive 3D iPhone model and a video slider with a dynamic progress bar",
+      "Personal Finace App allows you to track your balance, budgets, transactions, and recurring bills effortlessly. Create savings pots and stay in control of your finances with interactive charts!",
   },
   {
     id: 2,
@@ -62,13 +64,13 @@ export const projects = [
   },
   {
     id: 5,
-    name: "Brainwave",
-    live: "https://brainwave-georgios.netlify.app/",
-    repo: "https://github.com/georgios-kondylis/Brainwave",
-    skillImages: [react, tailwind, gsap],
-    img: brainwavefull,
+    name: "Apple Clone",
+    live: "https://giorgosogamiastsreact.netlify.app//",
+    img: appleFull,
+    repo: "https://github.com/georgios-kondylis/Georgios_Apple",
+    skillImages: [react, tailwind, gsap, threeJS],
     description:
-      "Brainwave is Futuristic UI design project, still in progress, focusing on front-end development.",
+      "An Apple clone featuring an interactive 3D iPhone model and a video slider with a dynamic progress bar",
   },
   {
     id: 6,
@@ -102,6 +104,16 @@ export const projects = [
   },
   {
     id: 9,
+    name: "Brainwave",
+    live: "https://brainwave-georgios.netlify.app/",
+    repo: "https://github.com/georgios-kondylis/Brainwave",
+    skillImages: [react, tailwind, gsap],
+    img: brainwavefull,
+    description:
+      "Brainwave is Futuristic UI design project, still in progress, focusing on front-end development.",
+  },
+  {
+    id: 10,
     name: "Password Generator",
     live: "https://georgios-kondylis.github.io/PasswordGenerator/starter-code/index.html",
     repo: "https://github.com/georgios-kondylis/PasswordGenerator",
