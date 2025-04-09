@@ -103,8 +103,7 @@ const Projects = ({ textColor, darkMode }) => {
                             <img
                               key={i}
                               src={img}
-                              className={`object-contain max-sm:w-[30px] w-[20px] lg:w-[30px]
-                                 ${img === mongoDB ? ' max-sm:w-[17px] w-[10px] lg:w-[17px]' : ''}`}
+                              className={`object-contain max-sm:w-[30px] w-[20px] lg:w-[30px]`}
                             />
                           ))}
                         </div>

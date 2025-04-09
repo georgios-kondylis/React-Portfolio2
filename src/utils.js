@@ -8,7 +8,6 @@ import snake from "./assets/Project_pics/snake.mp4";
 import klarna from "./assets/Project_pics/klarna.jpg";
 import passGen2 from "./assets/Project_pics/pass2.png";
 import financeApp from "./assets/Project_pics/P_Finance_App.png"
-import mongoDB from "./assets/icons/mongodbicon.png"
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
@@ -20,6 +19,7 @@ import gsap from "./assets/icons/gsapicon.svg";
 import restApi from "./assets/icons/RESTapi.png";
 import threeJS from "./assets/icons/3js.png";
 import MUI from "./assets/icons/MUI.png";
+import Mongo from "./assets/icons/mongo.jpg";
 
 export const projects = [
   {
@@ -28,7 +28,7 @@ export const projects = [
     live: "https://georgiospersonalfinanceapp.vercel.app/sign-in",
     img: financeApp,
     repo: "https://github.com/georgios-kondylis/PersonalFinanceApp",
-    skillImages: [react, tailwind, MUI, mongoDB, restApi ],
+    skillImages: [react, tailwind, MUI, restApi, Mongo ],
     description:
       "Personal Finace App allows you to track your balance, budgets, transactions, and recurring bills effortlessly. Create savings pots and stay in control of your finances with interactive charts!",
   },
