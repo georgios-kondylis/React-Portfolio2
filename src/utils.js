@@ -130,7 +130,7 @@ export const testimonials = [
     img: "/MP-bg.png",
     title: "Instructor at Techover Academy",
     stars: ["1", "2", "3", "4", "5"],
-    review: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nesciunt a eaque molestias vel totam nobis sit ipsum sed, doloremque fuga consequatur aliquam cumque itaque provident excepturi autem ducimus veniam?"
+    review: " Georgios har visat starka färdigheter som fullstackutvecklare och har genomgående levererat bra resultat under sin utbildning. Han arbetar hårt, är engagerad och har en tydlig passion för utveckling både inom frontend och backend."
   },
   {
     name: "Pashalis V.",
