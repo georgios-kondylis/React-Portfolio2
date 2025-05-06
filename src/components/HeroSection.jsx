@@ -6,13 +6,13 @@ import { margins_paddings } from "../utils";
 
 const HeroSection = ({ textColor, textColor2, darkMode }) => {
   return (
-    <div id="home" className={`flex gap-[20px] min-h-[100vh] justify-between max-md:justify-center max-md:flex-col-reverse max-md:h-[100vh] items-center w-full ${margins_paddings} transition-all ease-in-out duration-300
+    <div id="home" className={`flex gap-[20px] min-h-[100vh] justify-between max-md:justify-center max-md:flex-col-reverse max-md:h-[100vh] items-center w-full ${margins_paddings} transition1
                                max-md:mt-[70px] max-sm:mt-[0px]`}>
       {/* Text Section */}
       <div className="max-md:w-[100%] md:w-[50%] h-[450px] max-sm:h-[370px] flex flex-col justify-between gap-2 ">
 
         <div className="flex flex-col max-md:items-center">
-          <h1 className={`${textColor} sm:text-[2rem] md:text-[2rem] max-md:text-center text-[1.5rem] font-bold transition-all ease-in-out duration-300`}>
+          <h1 className={`${textColor} sm:text-[2rem] md:text-[2rem] max-md:text-center text-[1.5rem] font-bold transition1`}>
             Hello! My name is Georgios Kondylis
           </h1>
           <Typewriter textColor={textColor} />
@@ -21,10 +21,10 @@ const HeroSection = ({ textColor, textColor2, darkMode }) => {
        
         <div id="SOCIAL-MEDIA_BUTTONS_CHECKS" className={`flex max-md:items-center flex-col gap-[20px]`}>
           <div className={`${textColor2} flex max-sm:justify-center gap-[20px]`}>
-            <a target='blank' href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/"><i className={`fa-brands fa-linkedin text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-            <a target='blank' href="https://github.com/georgios-kondylis"><i className={`fa-brands fa-github text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-            <a target='blank' href="https://www.facebook.com/Georgios1995Kondylis/"><i className={`fa-brands fa-facebook text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-            <a target='blank' href="https://www.instagram.com/georgios.kondylis/"><i className={`fa-brands fa-instagram text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
+            <a target='blank' href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/"><i className={`fa-brands fa-linkedin text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+            <a target='blank' href="https://github.com/georgios-kondylis"><i className={`fa-brands fa-github text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+            <a target='blank' href="https://www.facebook.com/Georgios1995Kondylis/"><i className={`fa-brands fa-facebook text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+            <a target='blank' href="https://www.instagram.com/georgios.kondylis/"><i className={`fa-brands fa-instagram text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
           </div>
          
 

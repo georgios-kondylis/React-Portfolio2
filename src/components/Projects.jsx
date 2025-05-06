@@ -59,25 +59,18 @@ const Projects = ({ textColor, darkMode }) => {
                   (slideIndex + 1) * projectsPerPage
                 )
                 .map((project) => (
-                  <div
-                    key={project.id}
-                    className="relative max-sm:h-fit flex flex-col items-center px-[1px] w-full "
-                  >
-                    <h1
-                      className={`${textColor} text-[1.4rem] mb-2 transition-all duration-300 ease-in-out`}
-                    >
+                  <div key={project.id}  className="relative max-sm:h-fit flex flex-col items-center px-[1px] w-full " >
+                    <h1 className={`${textColor} text-[1.4rem] mb-2 transition-all duration-300 ease-in-out`} >
                       {project.name}
                     </h1>
-                    <div
-                      className="relative overflow-hidden rounded-lg"
+                    <div className="relative overflow-hidden rounded-lg"
                       onMouseEnter={() => setHoveredProject(project.id)}
                       onMouseLeave={() => setHoveredProject(null)}
                     >
                       {project.video ? (
                         <video autoPlay muted loop src={project.video}></video>
                       ) : (
-                        <img
-                          className="rounded-lg w-full"
+                        <img className="rounded-lg w-full"
                           src={project.img}
                           alt={project.name}
                         />
@@ -85,16 +78,12 @@ const Projects = ({ textColor, darkMode }) => {
                       
                      {hoveredProject === project.id ?  <div className={`absolute inset-0 backdrop-blur-sm w-full flex flex-col justify-center items-center text-white transition-all duration-700 ease-in-out`} ></div> : null} 
 
-                      <div
-                        className={` 
-                          absolute inset-0 bg-[#000000cb] w-full flex flex-col justify-center items-center text-white transition-transform duration-300 ease-in-out
-                          ${
-                            hoveredProject === project.id
+                      <div className={`absolute inset-0 bg-[#000000cb] w-full flex flex-col justify-center items-center text-white transition1
+                          ${ hoveredProject === project.id
                               ? "translate-y-[0px] opacity-100"
                               : "translate-y-full opacity-0"
-                          }`}
-                      >
-                        <h1 className="text-[1rem] font-semibold p-[10px] text-center">
+                          }`} >
+                        <h1 className="text-[1rem] overflow-y-auto max-h-[70%] font-semibold p-[10px] text-center">
                           {project.description}
                         </h1>
 

@@ -8,6 +8,7 @@ import snake from "./assets/Project_pics/snake.mp4";
 import klarna from "./assets/Project_pics/klarna.jpg";
 import passGen2 from "./assets/Project_pics/pass2.png";
 import financeApp from "./assets/Project_pics/P_Finance_App.png"
+import upendi from "./assets/Project_pics/upendi.png"
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
@@ -20,6 +21,7 @@ import restApi from "./assets/icons/RESTapi.png";
 import threeJS from "./assets/icons/3js.png";
 import MUI from "./assets/icons/MUI.png";
 import Mongo from "./assets/icons/mongo.jpg";
+import framermotion from "./assets/icons/framermotionicon.svg";
 
 export const projects = [
   {
@@ -28,19 +30,19 @@ export const projects = [
     live: "https://georgiospersonalfinanceapp.vercel.app/sign-in",
     img: financeApp,
     repo: "https://github.com/georgios-kondylis/PersonalFinanceApp",
-    skillImages: [react, tailwind, MUI, restApi, Mongo ],
+    skillImages: [react, tailwind, MUI, restApi, Mongo, framermotion ],
     description:
       "Personal Finace App allows you to track your balance, budgets, transactions, and recurring bills effortlessly. Create savings pots and stay in control of your finances with interactive charts!",
   },
   {
     id: 2,
-    name: "Flag App",
-    live: "https://georgios-the-flagapp-techover.netlify.app/",
-    repo: "https://github.com/georgios-kondylis/CountryApp",
-    skillImages: [react, tailwind, restApi],
-    img: flagapp,
+    name: "Upendi Coffee Shop",
+    live: "https://coffee-shop-new-zeta.vercel.app/",
+    repo: "https://github.com/georgios-kondylis/coffeeShopNew",
+    skillImages: [react, tailwind, restApi, Mongo, framermotion],
+    img: upendi,
     description:
-      "Developed an API-driven application that dynamically renders country information, including flags, by fetching data from a database using dynamic routing and API requests.",
+      "Developed a full-stack coffee shop app with secure authentication, profile management, and personalized ordering. Users receive email confirmations and can leave reviews with text and images. Utilized Cloudinary for image storage and RESTful APIs for full CRUD functionality.",
   },
   {
     id: 3,
@@ -84,6 +86,16 @@ export const projects = [
   },
   {
     id: 7,
+    name: "Flag App",
+    live: "https://georgios-the-flagapp-techover.netlify.app/",
+    repo: "https://github.com/georgios-kondylis/CountryApp",
+    skillImages: [react, tailwind, restApi],
+    img: flagapp,
+    description:
+      "Developed an API-driven application that dynamically renders country information, including flags, by fetching data from a database using dynamic routing and API requests.",
+  },
+  {
+    id: 8,
     name: "Pong Game",
     live: "https://georgios-kondylis.github.io/Pong-Game/Ping_Pong.html",
     repo: "https://github.com/georgios-kondylis/Pong-Game",
@@ -93,7 +105,7 @@ export const projects = [
       "A smooth, two-player Pong game with a fun and interactive gameplay experience.",
   },
   {
-    id: 8,
+    id: 9,
     name: "Snake Game",
     live: "https://georgios-kondylis.github.io/Snake_game/snake.html",
     repo: "https://github.com/georgios-kondylis/Snake_game",
@@ -103,7 +115,7 @@ export const projects = [
       "A classic Snake game built using JavaScript and arrays for dynamic gameplay.",
   },
   {
-    id: 9,
+    id: 10,
     name: "Brainwave",
     live: "https://brainwave-georgios.netlify.app/",
     repo: "https://github.com/georgios-kondylis/Brainwave",
@@ -113,7 +125,7 @@ export const projects = [
       "Brainwave is Futuristic UI design project, still in progress, focusing on front-end development.",
   },
   {
-    id: 10,
+    id: 11,
     name: "Password Generator",
     live: "https://georgios-kondylis.github.io/PasswordGenerator/starter-code/index.html",
     repo: "https://github.com/georgios-kondylis/PasswordGenerator",
@@ -130,7 +142,7 @@ export const testimonials = [
     img: "/MP-bg.png",
     title: "Instructor at Techover Academy",
     stars: ["1", "2", "3", "4", "5"],
-    review: " Georgios har visat starka färdigheter som fullstackutvecklare och har genomgående levererat bra resultat under sin utbildning. Han arbetar hårt, är engagerad och har en tydlig passion för utveckling både inom frontend och backend."
+    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum cumque consequuntur ratione nostrum minus est! Praesentium, perspiciatis? Culpa saepe error vero quaerat reprehenderit, quis mollitia tempore laudantium soluta voluptas?."
   },
   {
     name: "Pashalis V.",

@@ -12,10 +12,10 @@ const Footer = ({darkMode, textColor, textColor2}) => {
 
       <div className='flex flex-col gap-[20px]'>
         <div className={`${textColor2} max-sm:hidden flex gap-[30px] w-full max-md:justify-center justify-start`}>
-          <a target='blank' href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/"><i className={`fa-brands fa-linkedin text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-          <a target='blank' href="https://github.com/georgios-kondylis"><i className={`fa-brands fa-github text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-          <a target='blank' href="https://www.facebook.com/Georgios1995Kondylis/"><i className={`fa-brands fa-facebook text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
-          <a target='blank' href="https://www.instagram.com/georgios.kondylis/"><i className={`fa-brands fa-instagram text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition-all ease-in-out duration-300`}></i></a>
+          <a target='blank' href="https://www.linkedin.com/in/georgios-kondylis-7b680a1a7/"><i className={`fa-brands fa-linkedin text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+          <a target='blank' href="https://github.com/georgios-kondylis"><i className={`fa-brands fa-github text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+          <a target='blank' href="https://www.facebook.com/Georgios1995Kondylis/"><i className={`fa-brands fa-facebook text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
+          <a target='blank' href="https://www.instagram.com/georgios.kondylis/"><i className={`fa-brands fa-instagram text-[2rem] ${darkMode? 'hover:text-[#ffffff]' :'hover:text-[#4a4a4a]'} hover:scale-110 transition1`}></i></a>
         </div>
 
         <div className={`flex ${textColor}`}> <p>© Georgios Kondylis | All Rights Reserved</p> </div>

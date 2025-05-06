@@ -9,7 +9,7 @@ import Testimonials from './Testimonials';
 
 const Home = ({ darkMode, setDarkMode, textColor2, textColor, sideNavIsOpen, setSideNavIsOpen, toggleSideNav }) => {
 
-  const dynamicBorder = `border ${darkMode ? ' focus:border-[#f5f3dc] border-[#3e3e3e] hover:border-[#f5f3dc] transition-all ease-in-out duration-300' : 'focus:border-[#191919] border-[#b5b5b59b] hover:border-[#121212c9] transition-all ease-in-out duration-300'}`;
+  const dynamicBorder = `border ${darkMode ? ' focus:border-[#f5f3dc] border-[#3e3e3e] hover:border-[#f5f3dc] transition1' : 'focus:border-[#191919] border-[#b5b5b59b] hover:border-[#121212c9] transition1'}`;
 
   return (
     <div id='home' className={`pt-[70px] mx-auto flex flex-col items-center max-w-[1540px]`}>
