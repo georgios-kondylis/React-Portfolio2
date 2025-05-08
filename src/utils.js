@@ -142,7 +142,7 @@ export const testimonials = [
     img: "/MP-bg.png",
     title: "Instructor at Techover Academy",
     stars: ["1", "2", "3", "4", "5"],
-    review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum cumque consequuntur ratione nostrum minus est! Praesentium, perspiciatis? Culpa saepe error vero quaerat reprehenderit, quis mollitia tempore laudantium soluta voluptas?."
+    review: "Georgios is an incredibly committed and hardworking developer. He quickly grasps new concepts and applies them effectively in his projects. His technical skills, especially in React, Node.js, and MongoDB, are impressive, and he consistently delivers high quality work. Georgios ability to learn fast, adapt, and solve problems with a positive attitude makes him a valuable asset to any team. I'm confident he will continue to excel in his career."
   },
   {
     name: "Pashalis V.",
