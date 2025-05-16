@@ -4,6 +4,7 @@ import html from "../assets/icons/htmlicon.png";
 import js from "../assets/icons/jsicon.png";
 import nextjs from "../assets/icons/nextjsicon.png";
 import react from "../assets/icons/reacticon.png";
+import typescript from "../assets/icons/Typescript.png"
 import tailwind from "../assets/icons/tailwindicon.png";
 import node3 from "../assets/icons/node3.png";
 import expressicon from "../assets/icons/expressicon.png";
@@ -24,6 +25,7 @@ const Skills = ({textColor, darkMode}) => {
       { img: tailwind, name: "Tailwind CSS" },
       { img: js, name: "JavaScript" },
       { img: react, name: "React" },
+      { img: typescript, name: "Typescript" },
       { img: nextjs, name: "Next.js" },
       { img: gsap, name: "GSAP" },
       { img: framermotion, name: "Fr.Motion" },
