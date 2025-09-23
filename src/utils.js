@@ -54,7 +54,7 @@ export const projects = [
   //   img: klarna,
   //   description:
   //     "I built a web service integrating the Klarna Checkout API using Node.js and Express. The project features real API calls to create a working checkout solution, simulating a real purchase process with products from the FakeStore API.",
-  // },
+  // },,
   {
     id: 3,
     name: "Personal Trainer Gk",
