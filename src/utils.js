@@ -10,6 +10,7 @@ import passGen2 from "./assets/Project_pics/pass2.png";
 import financeApp from "./assets/Project_pics/P_Finance_App.png"
 import upendi from "./assets/Project_pics/upendi.png"
 import ptgk from "./assets/Project_pics/pt-gk.png"
+import typescript from "./assets/icons/Typescript.png"
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
