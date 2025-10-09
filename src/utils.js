@@ -30,7 +30,7 @@ export const projects = [
   {
     id: 1,
     name: "Cinemoon Movie App",
-    live: "https://georgios-kondylis-cinemoon-fullstack-movieapp-rd5vlvh7t.vercel.app/sign-in",
+    live: "https://full-stack-movie-app-frontend-ten.vercel.app/sign-in",
     img: cinemoon,
     repo: "https://github.com/georgios-kondylis/FullStackMovieApp",
     skillImages: [node, js, Mongo, react, tailwind, gsap, restApi, ],
