@@ -12,6 +12,7 @@ import upendi from "./assets/Project_pics/upendi.png"
 import ptgk from "./assets/Project_pics/pt-gk.png"
 import typescript from "./assets/icons/Typescript.png"
 import cinemoon from "./assets/Project_pics/CinemoonMoviesPic.png"
+import smaragda from "./assets/Project_pics/smaragda-hotel.png"
 
 import css from "./assets/icons/cssicon.png";
 import html from "./assets/icons/htmlicon.png";
@@ -40,6 +41,16 @@ export const projects = [
   },
   {
     id: 2,
+    name: "Smaragda Hotel",
+    live: "https://smaragda-hotel.com",
+    img: smaragda,
+    repo: "https://github.com/georgios-kondylis/HotelSmaragda",
+    skillImages: [node, Mongo, react, tailwind, restApi, gsap ],
+    description:
+      "Smaragda Hotel is a responsive full-stack website with Google login, Cloudinary image handling, dynamic routing, online apartment booking, reviews, and a contact form, all wrapped in a smooth, modern design.",
+  },
+    {
+    id: 3,
     name: "Personal Finace App",
     live: "https://georgiospersonalfinanceapp.vercel.app/sign-in",
     img: financeApp,
@@ -49,7 +60,7 @@ export const projects = [
       "Personal Finace App allows you to track your balance, budgets, transactions, and recurring bills effortlessly. Create savings pots and stay in control of your finances with interactive charts!",
   },
   {
-    id: 3,
+    id: 4,
     name: "Upendi Coffee Shop",
     live: "https://coffee-shop-new-zeta.vercel.app/",
     repo: "https://github.com/georgios-kondylis/coffeeShopNew",
@@ -59,7 +70,7 @@ export const projects = [
       "Developed a full-stack coffee shop app with secure authentication, profile management, and personalized ordering. Users receive email confirmations and can leave reviews with text and images. Utilized Cloudinary for image storage and RESTful APIs for full CRUD functionality.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Personal Trainer Gk",
     live: "https://pt-gk.vercel.app/",
     repo: "https://github.com/georgios-kondylis/PT_GK",
@@ -69,7 +80,7 @@ export const projects = [
       "A full-stack web application for an online coaching service with account management (sign up, login, and Google login), a custom-built AI chatbot, and booking functionality for free consultations. Users receive email notifications upon booking.",
   },  
   {
-    id: 5,
+    id: 6,
     name: "Lotus & Olive Restaurant",
     live: "https://georgios-kondylis.github.io/Lotus-Olive-Restaurant/",
     repo: "https://github.com/georgios-kondylis/Lotus-Olive-Restaurant",
@@ -79,7 +90,7 @@ export const projects = [
       "Modern restaurant website with a functional table booking form.",
   },
   {
-    id: 6,
+    id: 7,
     name: "Apple Clone",
     live: "https://giorgosogamiastsreact.netlify.app//",
     img: appleFull,
@@ -89,7 +100,7 @@ export const projects = [
       "An Apple clone featuring an interactive 3D iPhone model and a video slider with a dynamic progress bar",
   },
   {
-    id: 7,
+    id: 8,
    name: "Spotify Clone",
     live: "https://inquisitive-valkyrie-b87165.netlify.app/",
     repo: "https://github.com/georgios-kondylis/Spotify_Clone.",
@@ -99,7 +110,7 @@ export const projects = [
       "Clone of Spotify's interface with custom features, utilizing auth keys and API tokens for user interaction.",
   },
   {
-    id: 8,
+    id: 9,
     name: "Brainwave",
     live: "https://brainwave-georgios.netlify.app/",
     repo: "https://github.com/georgios-kondylis/Brainwave",
@@ -109,7 +120,7 @@ export const projects = [
       "Brainwave is Futuristic UI design project, still in progress, focusing on front-end development.",
   },
   {
-    id: 9,
+    id: 10,
     name: "Pong Game",
     live: "https://georgios-kondylis.github.io/Pong-Game/Ping_Pong.html",
     repo: "https://github.com/georgios-kondylis/Pong-Game",
@@ -119,7 +130,7 @@ export const projects = [
       "A smooth, two-player Pong game with a fun and interactive gameplay experience.",
   },
   {
-    id: 10,
+    id: 11,
     name: "Snake Game",
     live: "https://georgios-kondylis.github.io/Snake_game/snake.html",
     repo: "https://github.com/georgios-kondylis/Snake_game",
@@ -129,7 +140,7 @@ export const projects = [
       "A classic Snake game built using JavaScript and arrays for dynamic gameplay.",
   },
   {
-    id: 11,
+    id: 12,
     name: "Password Generator",
     live: "https://georgios-kondylis.github.io/PasswordGenerator/starter-code/index.html",
     repo: "https://github.com/georgios-kondylis/PasswordGenerator",
